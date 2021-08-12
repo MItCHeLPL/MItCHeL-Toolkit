@@ -52,7 +52,7 @@ Environment=USER=pi HOME=/home/pi
 WantedBy=multi-user.target
 ```
 
-## Press `Ctrl+X`, than press `Y` and `Enter` to save file
+### Press `Ctrl+X`, than press `Y` and `Enter` to save file
 
 ## Enable the service (this will cause it to start on boot)
 ```
