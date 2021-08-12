@@ -2,20 +2,20 @@
 A set of useful code snippets, examples, tutorials and hints for various programming languages and technologies
 
 # Current code snippets, examples, tutorials and hints
->## Universal
+<!-- >## Universal
 
 >## C#
 
 >## C++
 
->## CSS
+>## CSS -->
 
 >## Git
 >* [GitHub code block language list](Git/Code-Block-Languages.md)
 >* [Remove file or directory from GitHub commit history](Git/Remove-file-or-dir-from-history.md)
 >* [Remove commit from GitHub commit history](Git/Remove-commits-from-history.md)
 
->## JavaScript
+<!-- >## JavaScript -->
 
 >## Linux
 >>### bash
@@ -24,7 +24,7 @@ A set of useful code snippets, examples, tutorials and hints for various program
 >>### Other
 >>* [Setting up Linux service](Linux/Setting-up-service.md)
 
->## PHP
+<!-- >## PHP -->
 
 >## Python
 >>### Discord py
@@ -34,7 +34,7 @@ A set of useful code snippets, examples, tutorials and hints for various program
 >>### Other
 >>* [Setting up virtual environment](Python/Setting-up-venv.md)
 
->## Rainmeter
+<!-- >## Rainmeter -->
 
 >## PiHole
->>* [Filter list](PiHole/Filter-list.txt)
+>* [Filter list](PiHole/Filter-list.txt)
