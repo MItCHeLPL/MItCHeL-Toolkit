@@ -7,7 +7,7 @@ pip install git+https://github.com/Sheepposu/discord.py.git
 
 ## Example python voice recording script
 
-### Simple example to use as separate class
+### Simple example to use as a separate class
 ```python
 import discord
 
