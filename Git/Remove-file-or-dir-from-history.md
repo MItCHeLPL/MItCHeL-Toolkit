@@ -1,7 +1,7 @@
 # Remove directory or files from all commits + history and push it to GitHub
 
 ## Install filter-repo python package
-[Installation](https://github.com/newren/git-filter-repo)
+[Installation](https://github.com/newren/git-filter-repo/blob/main/INSTALL.md)
 
 ## Filter your repository
 ```shell
