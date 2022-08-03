@@ -20,30 +20,30 @@ public class Timer
 
     public void StartTimer()
     {
-        startTime = Time.Time;
+        startTime = Time.time;
 
         isRunning = true;
     }
 
     public void StopTimer()
     {
-        stopTime = Time.Time;
+        stopTime = Time.time;
 
         isRunning = false;
     }
 
     public void PauseTimer()
     {
-        totalTimeElapsed += Time.Time - startTime;
-        startTime = Time.Time;
-        stopTime = Time.Time;
+        totalTimeElapsed += Time.time - startTime;
+        startTime = Time.time;
+        stopTime = Time.time;
 
         isRunning = false;
     }
 
     public void ResumeTimer()
     {
-        startTime = Time.Time;
+        startTime = Time.time;
 
         isRunning = true;
     }
@@ -52,7 +52,7 @@ public class Timer
     {
         if (isRunning)
         {
-            return (Time.Time - startTime) + totalTimeElapsed;
+            return (Time.time - startTime) + totalTimeElapsed;
         }
         else
         {
