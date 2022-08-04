@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class Timer
 {
-    public double startTime = 0;
-    public double stopTime = 0;
+    public double StartTime = 0;
+    public double StopTime = 0;
 
-    public double totalTimeElapsed = 0;
+    public double TotalTimeElapsed = 0;
 
-    public bool isRunning = false;
+    public bool IsRunning = false;
 
 
     public Timer(bool startOnInit = false)
@@ -20,43 +20,43 @@ public class Timer
 
     public void StartTimer()
     {
-        startTime = Time.time;
+        StartTime = Time.time;
 
-        isRunning = true;
+        IsRunning = true;
     }
 
     public void StopTimer()
     {
-        stopTime = Time.time;
+        StopTime = Time.time;
 
-        isRunning = false;
+        IsRunning = false;
     }
 
     public void PauseTimer()
     {
-        totalTimeElapsed += Time.time - startTime;
-        startTime = Time.time;
-        stopTime = Time.time;
+        TotalTimeElapsed += Time.time - StartTime;
+        StartTime = Time.time;
+        StopTime = Time.time;
 
-        isRunning = false;
+        IsRunning = false;
     }
 
     public void ResumeTimer()
     {
-        startTime = Time.time;
+        StartTime = Time.time;
 
-        isRunning = true;
+        IsRunning = true;
     }
 
     public virtual double GetTime()
     {
-        if (isRunning)
+        if (IsRunning)
         {
-            return (Time.time - startTime) + totalTimeElapsed;
+            return (Time.time - StartTime) + TotalTimeElapsed;
         }
         else
         {
-            return (stopTime - startTime) + totalTimeElapsed;
+            return (StopTime - StartTime) + TotalTimeElapsed;
         }
     }
 }
