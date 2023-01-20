@@ -9,13 +9,8 @@ pip install virtualenv
 ```
 
 ## Creating virtual environment
-### Linux
 ```shell
 python -m venv /path/to/env/[environment-name]
-```
-### Windows
-```shell
-virtualenv --python C:\Path\To\Python\python.exe [environment-name]
 ```
 
 ## Entering virtual environment
@@ -70,7 +65,7 @@ pip install -r /path/to/old/location/requirements.txt
 ```
 ### Windows
 ```shell
-virtualenv --python C:\Path\To\Python\python.exe [environment-name]
+python -m venv /path/to/env/[environment-name]
 .\path\to\env\[environment-name]\Scripts\activate
 pip install -r /path/to/old/location/requirements.txt
 ```

@@ -21,19 +21,19 @@ public class VirtualCameraController : MonoBehaviour
     {
         if (axisName == "Mouse X" && playerInputEnabled)
         {
-            return Input.GetAxis("Mouse X") * sensitivityX * Time.timeScale;
+            return UnityEngine.Input.GetAxis("Mouse X") * sensitivityX * Time.timeScale;
         }
         else if (axisName == "Mouse Y" && playerInputEnabled)
         {
-            return Input.GetAxis("Mouse Y") * sensitivityY * Time.timeScale;
+            return UnityEngine.Input.GetAxis("Mouse Y") * sensitivityY * Time.timeScale;
         }
         else if (axisName == "Mouse X" && !playerInputEnabled)
         {
-            return Input.GetAxis("Mouse X") * 0;
+            return UnityEngine.Input.GetAxis("Mouse X") * 0;
         }
         else if (axisName == "Mouse Y" && !playerInputEnabled)
         {
-            return Input.GetAxis("Mouse Y") * 0;
+            return UnityEngine.Input.GetAxis("Mouse Y") * 0;
         }
         return 0;
     }

@@ -9,7 +9,12 @@ public class ObjectFaceOtherObject : MonoBehaviour
 
 	void Update()
     {
-        transform.LookAt(target.position); //LookAt
-		transform.rotation *= Quaternion.Euler(rotationOffset); //Offset
+		FaceOtherObject(transform, target, rotationOffset);
+	}
+
+	public static void FaceOtherObject(Transform transform, Transform target, Vector3 offset)
+	{
+		transform.LookAt(target.position);
+		transform.rotation *= Quaternion.Euler(offset);
 	}
 }

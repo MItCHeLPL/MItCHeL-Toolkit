@@ -16,7 +16,6 @@ public class ObjectFaceCamera : MonoBehaviour
 	void LateUpdate()
 	{
 		transform.LookAt(target.position); //LookAt
-		
 		transform.rotation *= Quaternion.Euler(rotationOffset); //Offset
 	}
 }

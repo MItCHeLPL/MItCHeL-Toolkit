@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Cooldown
 {
-    public bool IsInCooldown => Time.time <= _nextFireTime;
+    public bool IsInCooldown => DateTime.Now.Ticks <= _nextFireTime;
 
     private readonly float _cooldownTime;
     private float _nextFireTime = 0;
@@ -20,6 +20,6 @@ public class Cooldown
 
     public void StartCooldown()
     {
-        _nextFireTime = Time.time + _cooldownTime;
+        _nextFireTime = DateTime.Now.Ticks + _cooldownTime;
     }
 }
