@@ -3,6 +3,8 @@ using System;
 public class HourMinute
 {
     public int Time { get; private set;}
+	
+	public const int MaxTime = 24 * 60;
 
     public int Hours24 => (int)Math.Floor((double)(Time / 60));
     public int Hours12 => Hours24 % 12 == 0 ? 12 : Hours24 % 12;
@@ -10,6 +12,11 @@ public class HourMinute
     public string AMPM => Hours24 >= 12 ? "PM" : "AM";
 
 
+	public HourMinute()
+    {
+        SetTime(0);
+    }
+	
     public HourMinute(int time)
     {
         SetTime(time);
