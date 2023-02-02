@@ -9,6 +9,7 @@ A set of useful code snippets, examples, tutorials and hints for various program
 >>>#### Time
 >>>* [Cooldown](CS/PureCS/Time/Cooldown.cs)
 >>>* [Timer](CS/PureCS/Time/Timer.cs) / [CountdownTimer](CS/PureCS/Time/CountdownTimer.cs)
+>>>* [HourMinute](CS/PureCS/Time/HourMinute.cs)
 >>
 >>### Unity
 >>>#### Audio
