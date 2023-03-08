@@ -41,6 +41,7 @@ A set of useful code snippets, examples, tutorials and hints for various program
 >>>#### Other
 >>>* [DataConverter](CS/Unity/DataConverter.cs)
 >>>* [ExtendedPhysics](CS/Unity/ExtendedPhysics.cs)
+>>>* [FakeChild](CS/Unity/FakeChild.cs)
 >>>* [LayerUtils](CS/Unity/LayerUtils.cs)
 >>>* [MathUtils](CS/Unity/MathUtils.cs)
 >>>* [ObjectFaceCamera](CS/Unity/ObjectFaceCamera.cs)
